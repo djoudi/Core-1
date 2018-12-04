@@ -40,6 +40,7 @@ if (apiToken) {
  * Vue
  */
 import Vue from 'vue';
+import CKEditor from '@ckeditor/ckeditor5-vue';
 window.Vue = Vue;
 
 /**
@@ -79,6 +80,9 @@ import History from './components/History.vue';
 import Filepicker from './components/Filepicker.vue';
 import Files from './components/Files.vue';
 import FileField from './components/FileField.vue';
+
+import EditorField from './components/EditorField.vue';
+
 window.EventBus = new Vue({});
 
 new Vue({
@@ -93,6 +97,7 @@ new Vue({
         Filepicker,
         Files,
         FileField,
+        EditorField,
         History,
     },
 }).$mount('#app');
